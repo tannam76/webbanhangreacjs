@@ -1,0 +1,92 @@
+/* Đặt nền gradient nhẹ cho footer */
+.bg-dark {
+  background: linear-gradient(135deg, #1e1e2f, #2b2b3d);
+  color: #ffffff;
+}
+
+/* Style cho phần tiêu đề của các cột */
+.text-uppercase {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Style cho các icon mạng xã hội */
+.bg-dark .text-white .me-3,
+.bg-dark .text-white {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.bg-dark .text-white .me-3:hover,
+.bg-dark .text-white:hover {
+  color: #007bff; /* Đổi màu khi hover */
+}
+
+/* Style cho liên kết */
+.bg-dark a {
+  text-decoration: none;
+  color: #b5b5b5;
+  transition: color 0.3s ease;
+}
+
+.bg-dark a:hover {
+  color: #ffffff;
+}
+
+/* Style cho input và button trong phần newsletter */
+.form-control {
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Khoảng cách giữa các cột */
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+/* Padding cho các phần nội dung */
+.p-4 {
+  padding: 40px;
+}
+
+/* Style cho dòng bản quyền */
+.text-center.p-3 {
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+}
