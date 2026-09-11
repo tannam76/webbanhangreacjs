@@ -3,10 +3,14 @@ services:
     name: webbanhangreacjs
     env: node
     plan: free
+
     buildCommand: npm install && npm run build
-    startCommand: npm install -g serve && serve -s build -l 3000
+
+    startCommand: npx serve -s build -l tcp://0.0.0.0:$PORT
+
     envVars:
       - key: NODE_VERSION
-        value: 18.16.0
+        value: 18.20.8
+
       - key: NODE_OPTIONS
-        value: --max-old-space-size=1024
+        value: --max-old-space-size=1536
